@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://localhost:3000/">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+Between the 18-24 September 2017 were you, in custody serving a court sentence?      </h1>
+
+
+<form>
+  <div class="form-group">
+    <fieldset>
+
+      <div class="multiple-choice" data-target="contact-by-email">
+        <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+        <label for="example-contact-by-email">Yes</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+        <label class="form-label" for="contact-email">Enter the date you will be, or were, submited</label>
+        <input class="form-control" name="contact-email" type="text" id="contact-email">
+        <br>
+        <br>
+        <label class="form-label" for="contact-email">Enter the date you were released</label>
+        <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+
+      <div class="multiple-choice" data-target="contact-by-phone">
+        <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+        <label for="example-contact-by-phone">No</label>
+      </div>
+
+      </div>
+
+    </fieldset>
+
+    <div class="form-group">
+      <p>
+        <a class="button button-continue" href="BOTH-Care.html" role="button">Continue</a>
+      </p>
+    </div>
+
+
+  </div>
+</form>
+
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

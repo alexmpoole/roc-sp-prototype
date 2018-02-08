@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="govuk-box-highlight">
+        <h1 class="heading-xlarge">
+          Application complete
+        </h1>
+        <p class="font-large">
+          Your reference number is <br>
+          <strong class="bold">HDJ2123F</strong>
+        </p>
+      </div>
+
+      <p>
+        We have sent you a confirmation email.
+      </p>
+
+
+      <h2 class="heading-medium">Payment Plan</h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            12th January 2018
+          </dt>
+          <dd class="cya-answer">
+            £150
+          </dd>
+          <dd class="cya-change">
+          12-12-12
+          <br>
+          ****0000
+          </dd>
+          </dd>
+        </div>
+      </dl>
+
+
+      <h2 class="heading-medium">What happens next</h2>
+      <p>We've sent your application and it has been registered with the DWP.</p>
+      <p>The payment plan will be setup automatically, you do not have to do anything else.</p>
+      <p><a href="https://www.gov.uk/service-manual/user-centred-design/resources/patterns/feedback-pages.html">What did you think of this service?</a> (takes 30 seconds)</p>
+
+
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="sp-start-page.html" role="button">Back to start</a>
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

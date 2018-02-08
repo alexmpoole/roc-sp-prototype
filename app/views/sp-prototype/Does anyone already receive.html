@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://localhost:3000/">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+Does anyone else in the household already receive a winter fuel payment?
+      </h1>
+
+
+      <form>
+        <div class="form-group">
+          <fieldset class="inline">
+
+            <div class="multiple-choice">
+              <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+              <label for="radio-inline-1">Yes</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+              <label for="radio-inline-2">No</label>
+            </div>
+
+          </fieldset>
+        </div>
+      </form>
+
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="Does anyone already receive yes.html" role="button">Continue</a>
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

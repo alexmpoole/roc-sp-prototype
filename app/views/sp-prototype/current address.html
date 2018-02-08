@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Please confirm your current address:
+      </h1>
+
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+
+        <div>
+          <dt class="cya-question">
+          Current Address
+          </dt>
+          <dd class="cya-answer">
+          Number, Street Name </br>
+          Area </br>
+          Postcode </br>
+          Country
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+      <h1 class="heading-medium">
+        What date did you move to this address?
+      </h1>
+      <label class="form-label" for="ni-number">
+
+        <span class="form-hint">
+          DD/MM/YYYY
+        </span>
+      </label>
+      <input class="form-control" id="ni-number" type="text" name="ni-number">
+</br>
+</br>
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="where did you live.html" role="button">No, date doesn't match</a>
+        </p>
+      </div>
+
+          <div class="form-group">
+            <p>
+              <a class="button button-continue" href="does anyone else reside with you.html" role="button">Yes, date matches </a>
+            </p>
+          </div>
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

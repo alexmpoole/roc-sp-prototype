@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://localhost:3000/">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Account Details
+      </h1>
+
+      <label class="form-label" for="full-name-f1">Name of Bank</label>
+      <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+      <br>
+      <br>
+      <label class="form-label" for="full-name-f1">Address of Bank</label>
+        <span class="form-hint">
+      This will be automatically filled via the name of your bank,<br> if different please <a href="#">click here</a>
+        </span>
+      <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+      <br>
+      <br>
+      <label class="form-label" for="full-name-f1">Sort Code</label>
+      <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+      <br>
+      <br>
+      <label class="form-label" for="full-name-f1">Acccount Number</label>
+      <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+      <br>
+      <br>
+      <label class="form-label" for="full-name-f1">Type of Account</label>
+      <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+      <br>
+      <br>
+      <label class="form-label" for="full-name-f1">IBAN Number</label>
+      <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+      <br>
+      <br>
+      <label class="form-label" for="full-name-f1">BIC Number</label>
+      <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+      <br>
+      <br>
+
+      <!--<div class="panel panel-border-wide">
+        <label class="form-label" for="full-name-f1">Building Society Roll or Reference Number(Optional)</label>
+        <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+      </div> <!-->
+
+
+
+<br>
+
+
+
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="BOTH-Declaration.html" role="button">Continue</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

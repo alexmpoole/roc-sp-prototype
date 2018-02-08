@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Is there anyone else in the household who was born on or before 'DATE'?
+      </h1>
+
+      <form>
+        <div class="form-group">
+          <fieldset class="inline">
+
+            <div class="multiple-choice">
+              <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+              <label for="radio-inline-1">Yes</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+              <label for="radio-inline-2">No</label>
+            </div>
+
+          </fieldset>
+        </div>
+      </form>
+
+    <div class="panel panel-border-narrow">
+      <dl class="govuk-check-your-answers cya-questions-short">
+
+        <div>
+          <dt class="cya-question">
+            Full Name
+          </dt>
+          <dt class="cya-question">
+            National Insurance No.
+          </dt>
+          <dt class="cya-question">
+            Date of Birth
+          </dt>
+          <dd class="cya-change">
+            <a href="#">
+              <span class="visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dd class="cya-answer">
+            Alex Poole
+          </dd>
+          <dd class="cya-answer">
+            12 12 12 12 12 B
+          </dd>
+          <dd class="cya-answer">
+            12/12/2112
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+
+    </div>
+
+</br>
+
+<p> <a href="#">Add another person </a></p>
+
+
+</br>
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="Does anyone already receive.html" role="button">Continue</a>
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://localhost:3000/">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+Do you reside in the UK or abroad?      </h1>
+
+
+<form>
+  <div class="form-group">
+    <fieldset class="inline">
+
+      <div class="multiple-choice">
+        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+        <label for="radio-inline-1">UK(England, Wales, Scotland & Northern Ireland)</label>
+      </div>
+      <br>
+      <br>
+      <div class="multiple-choice">
+        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+        <label for="radio-inline-2">Abroad</label>
+      </div>
+
+    </fieldset>
+  </div>
+</form>
+
+
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="UK-Subject to imagration.html" role="button">Continue, UK</a>
+        </p>
+      </div>
+
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="abroad-live outside the uk.html" role="button">Continue, Aroad</a>
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

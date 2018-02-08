@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Are these details correct?
+      </h1>
+
+
+
+      <br/>
+      <dl class="govuk-check-your-answers cya-questions-short">
+
+        <div>
+          <dt class="cya-question">
+            National Insurance Number
+          </dt>
+          <dd class="cya-answer">
+            12 12 12 12 12 B
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Title
+          </dt>
+          <dd class="cya-answer">
+            Mr
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+
+
+        <div>
+          <dt class="cya-question">
+            Name
+          </dt>
+          <dd class="cya-answer">
+            Alexander Poole
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Date of birth
+          </dt>
+          <dd class="cya-answer">
+            5 August 1954
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+
+
+      <br/>
+</!-->
+
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="daytime-phone.html" role="button">Continue</a>
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

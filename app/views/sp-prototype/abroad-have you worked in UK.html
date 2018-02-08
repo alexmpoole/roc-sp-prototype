@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://localhost:3000/">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+Have you worked in the UK before?</h1>
+
+<form>
+  <div class="form-group">
+    <fieldset>
+
+      <div class="multiple-choice" data-target="contact-by-email">
+        <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+        <label for="example-contact-by-email">Yes</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+        <label class="form-label" for="ni-number">
+          Please give dates of when you have worked in the uk
+          <span class="form-hint">
+          From
+          </span>
+        </label>
+        <input class="form-control" id="ni-number" type="text" name="ni-number">
+        <br>
+        <br>
+        <span class="form-hint">
+        To
+        </span>
+        </label>
+        <input class="form-control" id="ni-number" type="text" name="ni-number">
+
+      </div>
+
+      <div class="multiple-choice" data-target="contact-by-phone">
+        <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+        <label for="example-contact-by-phone">No</label>
+      </div>
+
+
+    </fieldset>
+  </div>
+</form>
+
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="abroad-uk and abroad residence.html" role="button">Continue</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

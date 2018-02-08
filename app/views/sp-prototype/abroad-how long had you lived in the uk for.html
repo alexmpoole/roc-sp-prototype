@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://localhost:3000/">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+How long had you lived in the UK for?      </h1>
+
+<label class="form-label" for="ni-number">
+  Please give dates of residence in the UK
+  <span class="form-hint">
+  From
+  </span>
+</label>
+<input class="form-control" id="ni-number" type="text" name="ni-number">
+<br>
+<br>
+<span class="form-hint">
+To
+</span>
+</label>
+<input class="form-control" id="ni-number" type="text" name="ni-number">
+
+<br>
+<br>
+
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="abroad-have you worked in UK.html" role="button">Continue</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

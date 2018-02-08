@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form>
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h1 class="heading-large">
+                Is there anyone else in the household who was born on or before 'DATE'?
+              </h1>
+            </legend>
+
+            <div class="multiple-choice" data-target="contact-by-email">
+              <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+              <label for="example-contact-by-email">Yes</label>
+            </div>
+
+
+            <div class="multiple-choice" data-target="contact-by-phone">
+              <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+              <label for="example-contact-by-phone">No</label>
+            </div>
+
+          </fieldset>
+        </div>
+      </form>
+
+
+</br>
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="yes-reside2.html" role="button">Yes, Continue</a>
+        </p>
+      </div>
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="qwerty.html" role="button">No, Continue</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

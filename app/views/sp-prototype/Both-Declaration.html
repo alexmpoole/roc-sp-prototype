@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="http://localhost:3000/">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Declaration
+      </h1>
+
+      <p> Legal text goes here </p>
+
+
+
+
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="BOTH-Confirmation.html" role="button">Continue</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

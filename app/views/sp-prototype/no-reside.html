@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Does anyone else live in "Number/Street Address here" along with yourself?
+      </h1>
+
+      <form>
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h1 class="heading-medium">
+                How do you want to be contacted?
+              </h1>
+            </legend>
+
+            <div class="multiple-choice" data-target="contact-by-email">
+              <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+              <label for="example-contact-by-email">Yes</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+              <label class="form-label" for="contact-email">Email address</label>
+              <input class="form-control" name="contact-email" type="text" id="contact-email">
+            </div>
+
+            <div class="multiple-choice" data-target="contact-by-phone">
+              <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+              <label for="example-contact-by-phone">No</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="contact-by-phone">
+              <label class="form-label" for="contact-phone">#</label>
+              <input class="form-control" name="contact-phone" type="text" id="contact-phone">
+            </div>
+
+          </fieldset>
+        </div>
+      </form>
+
+
+</br>
+      <div class="form-group">
+        <p>
+          <a class="button button-continue" href="qwerty.html" role="button">Continue</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
