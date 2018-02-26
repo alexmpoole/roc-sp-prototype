@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="roc-start-page">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+      <form>
+        <fieldset>
+
+          <legend>
+            <h3 class="heading-medium">What would you like to change?</h3>
+          </legend>
+
+
+
+        </fieldset>
+      </form>
+
+<br>
+
+      <p>
+        <a class="button button-continue" href="sp-pc-both.html" role="button">General Change</a>
+      </p>
+      <p>
+        <a class="button button-continue" href="housing cost.html" role="button">Housing costs</a>
+      </p>
+      <p>
+        <a class="button button-continue" href="sp-pc-both.html" role="button">Next Opt</a>
+      </p>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

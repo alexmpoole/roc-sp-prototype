@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Record of Call
+      </h1>
+
+<br>
+
+      <div class="panel panel-border-wide">
+        <p>This online service is also available in <a href="#">Welsh (Cymraeg).</a></p>
+      </div>
+<br>
+    <p>Registering takes around 10 minutes.</p>
+<br>
+      <p>
+        <a class="button button-start" href="who notified.html" role="button">Start now</a>
+      </p>
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="roc-start-page">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+<h2 class="heading-large">Housing Cost</h2>
+
+      <div class="form-group">
+        <label class="form-label" for="telephone-number">RCH</label>
+        <input class="form-control" id="telephone-number" name="telephone-number" type="text">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="telephone-number">Address
+          <span class="form-hint">
+          Should be pre populated with info pulled from prev page
+  </span></label>
+        <input class="form-control" id="telephone-number" name="telephone-number" type="text">
+      </div>
+
+
+      <p>
+        <a class="button button-continue" href="change.html" role="button">Continue</a>
+      </p>
+
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
